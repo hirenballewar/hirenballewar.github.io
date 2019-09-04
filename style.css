@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  
+
+}
+
+.ttop{
+    background-color: darkslategrey;
+    text-align: center;
+    height: 30px;
+  
+    display: block;
+    position: fixed;
+    width: 100%;
+    padding: 6px;
+    z-index: 999;
+}
+.ttop a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.ttop a:hover{
+    
+    color: #333;
+    background-color: whitesmoke;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#header{    
+    padding: 60px;
+    background: #30423f;
+    color: white;
+    height: 612px;
+    text-align: center;    
+}
+.header-content{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;    
+}
+.animated-words{
+    display: inline-block;
+    margin-left: -30%;
+}
+.animated-words span:nth-child(2){
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    color: #6b889d;
+}
+.animated-words span:nth-child(3){
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    color: #6b739d;
+}
+.animated-words span:nth-child(4){
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+    color: #7a6b9d;
+}
+.animated-words span:nth-child(5){
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    color: #8d6b9d;
+}
+.animated-words span:nth-child(6){
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+    color: #9b6b9d;
+}
+.animated-words span{
+    
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #6b969d;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+@-webkit-keyframes animateWord{
+    0%{ opacity: 0;}
+    2%{opacity: 0; -webkit-transform: translateY(-30px);}
+    5%{opacity: 1; -webkit-transform: translateY(0px);}
+    17%{opacity: 1; -webkit-transform: translateY(0px);}
+    20%{opacity: 0; -webkit-transform: translateY(30px);}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+.navbar{
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side{
+    flex: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main{
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+}
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 70px;
+    
+}
+
+@media screen and (max-widht:700px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
+.forIndent{
+    text-indent: 2em;
+}
+.alignAbout {
+        
+        padding-left: 30px;
+        font-weight: normal;
+        
+        
+}
+/* For Slide Show */
+img{
+    vertical-align: middle;
+}
+.container{
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color:black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color:white;
+}
+  
+.sliderow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.slidecolumn {
+    float: left;
+    width: 25%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+}
+  .slideimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.titleheading{
+    text-align: center;
+    background: #222;
+    color: #ddd;
+    padding: 19px;
+    top: 0;
+}
