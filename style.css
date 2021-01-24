@@ -37,7 +37,7 @@ body{
     padding: 60px;
     background: #30423f;
     color: white;
-    height: 612px;
+    height: 100vh;
     text-align: center;    
 }
 .header-content{
